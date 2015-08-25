@@ -1,0 +1,10 @@
+{
+  "name": "Scrabble",
+  "version": "1.0.0",
+  "description": "Nice way to learn version control with a game.",
+  "main": "master.js",
+  "homepage": "https://github.com/w3nl/scrabble",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
