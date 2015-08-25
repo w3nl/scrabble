@@ -98,7 +98,7 @@ var Scrabble = function() {
         clients[this.ip] || this.start();
         
         for(tile=0; tile<old_tiles.length; tile++) {
-            position = clients[this.ip].indexOf(tiles[tile]);
+            position = clients[this.ip].indexOf(tiles[tile].toUpperCase());
             if(position>=0)
                 clients[this.ip].splice(position, 1);
         }
@@ -121,7 +121,7 @@ var Scrabble = function() {
         clients[this.ip] || this.start();
         
         for(tile=0; tile<old_tiles.length; tile++) {
-            position = clients[this.ip].indexOf(tiles[tile]);
+            position = clients[this.ip].indexOf(tiles[tile].toUpperCase());
             if(position>=0)
                 returns.push( clients[this.ip].splice(position, 1) );
         }
